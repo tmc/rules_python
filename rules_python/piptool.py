@@ -87,7 +87,7 @@ parser = argparse.ArgumentParser(
 parser.add_argument('--name', action='store',
                     help=('The namespace of the import.'))
 
-parser.add_argument('--input', action='store',
+parser.add_argument('--input', action='append',
                     help=('The requirements.txt file to import.'))
 
 parser.add_argument('--output', action='store',
