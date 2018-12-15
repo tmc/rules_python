@@ -18,20 +18,20 @@ licenses(["notice"])  # Apache 2.0
 # To regenerate html docs, run:
 #   ./update_docs.sh
 
-load("@bazel_skylib//:skylark_library.bzl", "skylark_library")
+load("@bazel_skylib//:bzl_library.bzl", "bzl_library")
 load("@io_bazel_skydoc//skylark:skylark.bzl", "skylark_doc")
 
-skylark_library(
+bzl_library(
     name = "whl",
     srcs = ["//python:whl.bzl"],
 )
 
-skylark_library(
+bzl_library(
     name = "pip",
     srcs = ["//python:pip.bzl"],
 )
 
-skylark_library(
+bzl_library(
     name = "python",
     srcs = ["//python:python.bzl"],
 )
